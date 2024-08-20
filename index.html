@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Up Assets</title>
+</head>
+<body>
+    <form name="uploadForm">
+        <h2>Uploader de Arquivos(s)</h2>
+        <label for="uploadInput" id="fileLabeal">Escolher Arquivo(s)</label>
+        <input class="memory" type="file" id="uploadInput" multiple >
+        <input id="uploadButton" type="button" onclick="upload();" value="Enviar">
+        <svg viewBox="25 25 50 50" id="loader">
+            <circle r="20" cy="50" cx="50"></circle>
+          </svg>
+        <progress id="uploadProgress" value="0" max="100" hidden></progress>
+        
+        <div class="thumbnail" id="thumbnailContainer"></div>
+    </form>
+
+
+
+
+
+    <script src="https://unpkg.com/@smash-sdk/uploader/dist/SmashUploader.browser.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
